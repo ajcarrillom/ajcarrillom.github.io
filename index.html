@@ -1,0 +1,127 @@
+<!--Author: Anderson Carrillo --> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 2</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  border: 2px solid black;
+  background-color: #A9A9A9;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black; 
+  font-weight: bold;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 66.66%;
+  }
+  .col-lg-3 {
+    width: 100%;
+  }
+ 
+}
+
+/********** Tablets **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+  
+}
+
+/********** Phones **********/
+@media (max-width: 767px) {
+  .col-ip-1 {
+    float: left;
+  }
+  .col-ip-1 {
+    width: 100%;
+  }
+  
+}
+
+#p1, #p2, #p3 {
+ border: 1px solid black;
+ float: right;
+ width: 80px;
+ height: 23px;
+ text-align: center;
+ color: black;
+ font-weight: bold;
+}
+
+.c1 {
+   background-color: #F8F4BA;
+}
+
+.c2 {
+   background-color: #BAF0F8;
+}
+
+.c3 {
+   background-color: #F8D5BA;
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menú</h1>
+
+<div class="row">
+  <div class="col-lg-1 col-md-1">
+    <p><a id="p1" class="c1">Chicken</a><br><br>
+    Chicken meat is called muscle tissue and organs from chicken. It is very common to find it in many dishes and culinary preparations around the world. It is for this reason that it is included in the consumer price index.
+    </p>
+  </div>
+  <div class="col-lg-1 col-md-1">
+    <p><a id="p2" class="c2">Beef</a><br><br>
+    Meat is animal tissue, mainly muscle, that is consumed as food. It is a colloquial and commercial classification that only applies to land animals.
+    </p>
+  </div>
+  <div class="col-lg-1 col-md-3">
+    <p><a id="p3" class="c3">Sushi</a><br><br>
+    Sushi is a typical dish of Japanese origin based on rice seasoned with rice vinegar, sugar and salt and combined with other ingredients such as raw fish, shellfish, vegetables, etc..
+    </p>
+  </div>
+</div>
+</body>
+</html>
